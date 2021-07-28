@@ -1,6 +1,6 @@
 {
   "name": "vscode-markdown-it-pandoc",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "displayName": "vscode-markdown-it-pandoc",
   "description": "Package bundling a few markdown-it plugins to approximate pandoc flavoured markdown.",
   "keywords": [
