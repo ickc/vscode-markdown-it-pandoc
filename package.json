@@ -36,7 +36,7 @@
     "markdown-it-deflist": "^2.0.0",
     "markdown-it-footnote": "^3.0.0",
     "markdown-it-implicit-figures": "^0.10.0",
-    "markdown-it-gridtables": "^2.0.0",
+    "markdown-it-gridtables": "^0.2.0",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0"
   }
