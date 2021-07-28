@@ -1,13 +1,13 @@
 {
-  "name": "markdown-it-pandoc",
-  "version": "0.1.0",
-  "displayName": "markdown-it-pandoc",
+  "name": "vscode-markdown-it-pandoc",
+  "version": "0.1.1",
+  "displayName": "vscode-markdown-it-pandoc",
   "description": "Package bundling a few markdown-it plugins to approximate pandoc flavoured markdown.",
   "keywords": [
     "markdown",
     "github"
   ],
-  "publisher": "Kolen Cheung",
+  "publisher": "ickc",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/ickc/vscode-markdown-it-pandoc.git"
