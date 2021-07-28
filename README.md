@@ -1,9 +1,3 @@
-[![](https://vsmarketplacebadge.apphb.com/version/bierner.markdown-emoji.svg)](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji)
+[![](https://vsmarketplacebadge.apphb.com/version/ickc.markdown-it-pandoc.svg)](https://marketplace.visualstudio.com/items?itemName=ickc.markdown-it-pandoc)
 
-Adds [:emoji:](https://www.webpagefx.com/tools/emoji-cheat-sheet/) syntax support to VS Code's built-in Markdown preview
-
-
-![](https://github.com/mjbvz/vscode-markdown-emoji/raw/master/docs/example.png)
-
-# Features 
-- Adds support for [:emoji:](https://www.webpagefx.com/tools/emoji-cheat-sheet/) syntax to VS Code's built-in markdown preview
+Adds [markdown-it-pandoc](https://github.com/mb21/markdown-it-pandoc) syntax support to VS Code's built-in Markdown preview.
