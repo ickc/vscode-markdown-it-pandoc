@@ -1,13 +1,13 @@
 {
   "name": "vscode-markdown-it-pandoc",
-  "version": "0.1.5",
+  "version": "0.1.0",
   "displayName": "vscode-markdown-it-pandoc",
   "description": "Package bundling a few markdown-it plugins to approximate pandoc flavoured markdown.",
   "keywords": [
     "markdown",
     "markdown-it",
     "markdown-it-plugin",
-    "github"
+    "pandoc"
   ],
   "publisher": "ickc",
   "license": "MIT",
@@ -29,7 +29,6 @@
   },
   "main": "./extension.js",
   "dependencies": {
-    "markdown-it-pandoc": "^1.0.0",
     "markdown-it-bracketed-spans": "^1.0.0",
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-container": "^3.0.0",
