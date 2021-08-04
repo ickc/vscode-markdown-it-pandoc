@@ -2,8 +2,10 @@
 
 Adds [markdown-it-pandoc](https://github.com/mb21/markdown-it-pandoc) syntax support to VS Code's built-in Markdown preview.
 
-# License
+# Notes
 
-This repo is forked from https://github.com/mjbvz/vscode-markdown-emoji acted as a template for creating a [markdown-it extensions in VSCode](https://code.visualstudio.com/api/extension-guides/markdown-extension#adding-support-for-new-syntax-with-markdownit-plugins). Hence it already has an MIT license by Microsoft.
+Regarding options of markdown-it-pandoc:
 
-`extensions.js` is adapted from <https://github.com/mb21/markdown-it-pandoc/blob/master/index.js>. So the recommendation from [Altering author names in MIT license](https://softwareengineering.stackexchange.com/a/386584/380079) is followed to combine the authorships.
+Currently, `katex` is disabled. VSCode extension [mdmath](https://github.com/goessner/mdmath) is recommended to use markdown-it-texmath.
+
+`attributes` is disabled, because of an [upstream bug](https://github.com/arve0/markdown-it-attrs/issues/115) conflicting with markdown-it-texmath.
