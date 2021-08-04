@@ -29,9 +29,6 @@
   },
   "main": "./extension.js",
   "dependencies": {
-    // "markdown-it-bracketed-spans": "^1.0.0",
-    // "markdown-it-attrs": "^4.0.0",
-    // "markdown-it-container": "^3.0.0",
     "markdown-it-deflist": "^2.0.0",
     "markdown-it-footnote": "^3.0.0",
     "markdown-it-implicit-figures": "^0.10.0",
