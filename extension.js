@@ -1,24 +1,13 @@
 'use strict'
 
+const vscode = require('vscode');
+
 function activate(context) {
     return {
         extendMarkdownIt(md) {
             require('markdown-it-pandoc')(
                 md,
-                {
-                    // c.f. https://github.com/arve0/markdown-it-attrs/issues/115
-                    attributes:                 false
-                  , bracketed_spans:            true
-                  , definition_lists:           true
-                  , fenced_divs:                true
-                  , footnotes:                  true
-                  , implicit_figures:           true
-                  , grid_tables:                true
-                  // recommend using vscode mdmath extension for configurability
-                  , katex:                      false
-                  , subscript:                  true
-                  , superscript:                true
-                }
+                vscode.workspace.getConfiguration('vscode-markdown-it-pandoc').options
             );
             return md;
         }

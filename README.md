@@ -2,10 +2,21 @@
 
 Adds [markdown-it-pandoc](https://github.com/mb21/markdown-it-pandoc) syntax support to VS Code's built-in Markdown preview.
 
-# Notes
+# Options
 
-Regarding options of markdown-it-pandoc:
+`markdown-it-pandoc` options are configurable via `vscode-markdown-it-pandoc.options`, see `https://github.com/mb21/markdown-it-pandoc#dependencies` for details. Please reload VSCode after setting changes.
 
-Currently, `katex` is disabled. VSCode extension [mdmath](https://github.com/goessner/mdmath) is recommended to use markdown-it-texmath.
+While the options are left as default of `markdown-it-pandoc`, the recommended options are:
 
-`attributes` is disabled, because of an [upstream bug](https://github.com/arve0/markdown-it-attrs/issues/115) conflicting with markdown-it-texmath.
+- `katex: false`. VSCode extension [mdmath](https://github.com/goessner/mdmath) is recommended to use markdown-it-texmath.
+
+- `attributes: false`, because of an [upstream bug](https://github.com/arve0/markdown-it-attrs/issues/115) conflicting with markdown-it-texmath.
+
+i.e. the recommended setting in `settings.json` is
+
+```json
+    "vscode-markdown-it-pandoc.options": {
+        "attributes": false,
+        "katex": false
+    },
+```

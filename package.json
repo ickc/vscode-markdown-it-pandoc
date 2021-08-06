@@ -1,7 +1,7 @@
 {
   "name": "vscode-markdown-it-pandoc",
-  "version": "0.2.0",
-  "displayName": "vscode-markdown-it-pandoc",
+  "version": "0.3.0",
+  "displayName": "Markdown (Pandoc Flavored)",
   "description": "Package bundling a few markdown-it plugins to approximate pandoc flavoured markdown.",
   "keywords": [
     "markdown",
@@ -23,18 +23,35 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
   "contributes": {
+    "configuration": {
+      "title": "Markdown (Pandoc Flavored)",
+      "properties": {
+        "vscode-markdown-it-pandoc.options": {
+          "type": "object",
+          "default": {},
+          "description": "markdown-it-pandoc options. (see https://github.com/mb21/markdown-it-pandoc#dependencies)."
+        }
+      }
+    },
     "markdown.markdownItPlugins": true
   },
   "main": "./extension.js",
   "dependencies": {
+    "markdown-it-pandoc": "^2.0.0",
+    "markdown-it-bracketed-spans": "^1.0.0",
+    "markdown-it-attrs": "^4.0.0",
+    "markdown-it-container": "^3.0.0",
     "markdown-it-deflist": "^2.0.0",
     "markdown-it-footnote": "^3.0.0",
-    "markdown-it-implicit-figures": "^0.10.0",
-    "markdown-it-gridtables": "^0.2.0",
+    "markdown-it-implicit-figures": ">=0.10.0",
+    "markdown-it-gridtables": ">=0.2.0",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
-    "markdown-it-pandoc": "^2.0.0"
+    "markdown-it-texmath": ">=0.9.0",
+    "katex": ">=0.13.0"
   }
 }
