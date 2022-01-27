@@ -10,13 +10,10 @@ While the options are left as default of `markdown-it-pandoc`, the recommended o
 
 - `katex: false`. VSCode extension [mdmath](https://github.com/goessner/mdmath) is recommended to use markdown-it-texmath.
 
-- `attributes: false`, because of an [upstream bug](https://github.com/arve0/markdown-it-attrs/issues/115) conflicting with markdown-it-texmath.
-
 i.e. the recommended setting in `settings.json` is
 
 ```json
     "vscode-markdown-it-pandoc.options": {
-        "attributes": false,
         "katex": false
     },
 ```
