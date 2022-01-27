@@ -1,5 +1,6 @@
 # Change Log
 
+- v0.4.1: add markdown-it-task-lists to dependencies
 - v0.4.0: update dependencies
     - add `task_lists` support after working with upstream
     - `attributes` is now safe to use

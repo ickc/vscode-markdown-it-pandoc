@@ -1,6 +1,6 @@
 {
   "name": "vscode-markdown-it-pandoc",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "displayName": "Markdown (Pandoc Flavored)",
   "description": "Package bundling a few markdown-it plugins to approximate pandoc flavoured markdown.",
   "keywords": [
@@ -42,6 +42,7 @@
   "main": "./extension.js",
   "dependencies": {
     "markdown-it-pandoc": "^2.1.0",
+    "markdown-it-task-lists": "^2.0.0",
     "markdown-it-bracketed-spans": "^1.0.0",
     "markdown-it-attrs": "^4.1.0",
     "markdown-it-container": "^3.0.0",
