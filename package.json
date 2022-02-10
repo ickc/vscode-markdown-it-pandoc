@@ -1,6 +1,6 @@
 {
   "name": "vscode-markdown-it-pandoc",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "displayName": "Markdown (Pandoc Flavored)",
   "description": "Package bundling a few markdown-it plugins to approximate pandoc flavoured markdown.",
   "keywords": [
@@ -39,8 +39,8 @@
     },
     "markdown.markdownItPlugins": true
   },
-  "main": "./extension.js",
-  "browser": "./extension.js",
+  "main": "./out/extension.js",
+  "browser": "./out/extension.js",
   "dependencies": {
     "markdown-it-pandoc": "^2.1.0",
     "markdown-it-task-lists": "^2.0.0",
@@ -55,5 +55,12 @@
     "markdown-it-sup": "^1.0.0",
     "markdown-it-texmath": ">=0.9.0",
     "katex": ">=0.13.0"
-  }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run esbuild-base -- --minify",
+    "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
+    "esbuild": "npm run esbuild-base -- --sourcemap",
+    "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
+    "test-compile": "tsc -p ./"
+}
 }
