@@ -40,6 +40,7 @@
     "markdown.markdownItPlugins": true
   },
   "main": "./extension.js",
+  "browser": "./extension.js",
   "dependencies": {
     "markdown-it-pandoc": "^2.1.0",
     "markdown-it-task-lists": "^2.0.0",
