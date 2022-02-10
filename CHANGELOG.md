@@ -1,5 +1,6 @@
 # Change Log
 
+- v0.4.3: fix packaging issues
 - v0.4.2: Add browser property for web extension (#3)
 - v0.4.1: add markdown-it-task-lists to dependencies
 - v0.4.0: update dependencies
