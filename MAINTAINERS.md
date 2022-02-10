@@ -1,4 +1,4 @@
-1. `npm install -g vsce` if not done before
+1. `npm install -g vsce` to install or update `vsce`
 2. `npm i --save-dev esbuild`
 3. `vsce package`
 4. `vsce publish`
